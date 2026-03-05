@@ -272,11 +272,12 @@ func (c *Converter) InitializeCommonMarkRules() []Rule {
 				}
 
 				// If the content is a markdown image whose src matches the link href,
-				// return just the image to avoid redundant nesting like [![](url)](url).
-				if m := markdownImageR.FindStringSubmatch(strings.TrimSpace(content)); m != nil {
-					if m[2] == href {
-						md := strings.TrimSpace(content)
-						md = AddSpaceIfNessesary(selec, md)
+				// and the link has no title, return just the image to avoid
+				// redundant nesting like [![](url)](url).
+				trimmed := strings.TrimSpace(content)
+				if title == "" && strings.HasPrefix(trimmed, "![") {
+					if m := markdownImageR.FindStringSubmatch(trimmed); m != nil && m[2] == href {
+						md := AddSpaceIfNessesary(selec, trimmed)
 						return AdvancedResult{Markdown: md}, false
 					}
 				}
