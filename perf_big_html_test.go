@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	md "github.com/firecrawl/html-to-markdown"
-	"github.com/firecrawl/html-to-markdown/plugin"
+	md "github.com/evocrawl/html-to-markdown"
+	"github.com/evocrawl/html-to-markdown/plugin"
 )
 
 // TestPerfBigHTML_Smoke runs a large HTML file (random-ish content),

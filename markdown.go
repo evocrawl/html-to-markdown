@@ -21,7 +21,7 @@ var (
 		var buf bytes.Buffer
 		err := html.Render(&buf, element)
 		if err != nil {
-			log.Println("[firecrawl/html-to-markdown] ruleKeep: error while rendering the element to html:", err)
+			log.Println("[evocrawl/html-to-markdown] ruleKeep: error while rendering the element to html:", err)
 			return String("")
 		}
 

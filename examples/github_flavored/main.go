@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	md "github.com/firecrawl/html-to-markdown"
-	"github.com/firecrawl/html-to-markdown/plugin"
+	md "github.com/evocrawl/html-to-markdown"
+	"github.com/evocrawl/html-to-markdown/plugin"
 )
 
 func main() {

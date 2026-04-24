@@ -12,7 +12,7 @@ import (
 	"net/url"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/firecrawl/html-to-markdown/escape"
+	"github.com/evocrawl/html-to-markdown/escape"
 )
 
 var multipleSpacesR = regexp.MustCompile(`  +`)

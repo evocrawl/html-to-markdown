@@ -3,7 +3,7 @@ package plugin
 import (
 	"fmt"
 
-	md "github.com/firecrawl/html-to-markdown"
+	md "github.com/evocrawl/html-to-markdown"
 	yaml "gopkg.in/yaml.v2"
 )
 

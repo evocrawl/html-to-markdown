@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	md "github.com/firecrawl/html-to-markdown"
-	"github.com/firecrawl/html-to-markdown/plugin"
+	md "github.com/evocrawl/html-to-markdown"
+	"github.com/evocrawl/html-to-markdown/plugin"
 )
 
 func loadTestFile(b *testing.B, name string) string {

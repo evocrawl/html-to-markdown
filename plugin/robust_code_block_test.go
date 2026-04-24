@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	md "github.com/firecrawl/html-to-markdown"
+	md "github.com/evocrawl/html-to-markdown"
 )
 
 func TestRobustCodeBlock_LanguageDetection(t *testing.T) {
