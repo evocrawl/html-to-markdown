@@ -1,4 +1,4 @@
-module github.com/firecrawl/html-to-markdown
+module github.com/evocrawl/html-to-markdown
 
 go 1.20
 
